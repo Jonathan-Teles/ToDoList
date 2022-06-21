@@ -59,7 +59,7 @@ function getNewTask(){
     //finalcheck task
     checkTask.addEventListener('change', function(){
         if(checkTask.checked == true){
-            liNewTask.style.backgroundColor = "green"
+            liNewTask.style.backgroundColor = "#027264"
             liNewTask.style.color = "#fff"
             taskParaphaph.style.textDecoration = "line-through"
         }else{
