@@ -19,17 +19,22 @@ function getNewTask(){
     /* liNewTask.setAttribute('draggable', "true")
     liNewTask.setAttribute('id', "dragAndDrop") */
 
+    //div para tarefa, checkbox e button
+    let containertask = document.createElement('div')
+    containertask.className = "containerTask"
+    liNewTask.appendChild(containertask)
+
     //criando checkbox 
     let checkTask = document.createElement('input')
     checkTask.type = 'checkbox'
     checkTask.setAttribute('id', 'checkTask')
-    liNewTask.appendChild(checkTask)
+    containertask.appendChild(checkTask)
 
     //Criando paragrafo para receber a nova tarefa
     let taskParaphaph = document.createElement('p')
     taskParaphaph.setAttribute ('contenteditable',"true")
     taskParaphaph.innerText = takeNewTask       
-    liNewTask.appendChild(taskParaphaph)
+    containertask.appendChild(taskParaphaph)
     //Adicionando tarefas à lista
     taskList.appendChild(liNewTask)
 
@@ -49,7 +54,7 @@ function getNewTask(){
     removeButton.className = "btn"
     removeButton.appendChild(trashIconSpan)
     //adicionando button na tarefa
-    liNewTask.appendChild(removeButton)  
+    containertask.appendChild(removeButton)  
 
     //finalcheck task
     checkTask.addEventListener('change', function(){
