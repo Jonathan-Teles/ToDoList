@@ -80,7 +80,7 @@ ul li button{
 .containerTask p{
     flex:auto;
     max-width: 742px;
-    padding:.5rem 0;    
+    padding:.5rem 1rem;    
 }
 
 ul li{
