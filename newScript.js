@@ -85,7 +85,8 @@ function getNewTask(){
 
 
 function RemoveTask(removeButton){
-    removeButton.parentNode.remove()
+    let divTask = document.querySelector('.containerTask')
+    divTask.parentNode.remove(removeButton)
 }
 
 
