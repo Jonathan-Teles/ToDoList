@@ -77,6 +77,9 @@ function getNewTask(){
     }
     
     cleannerInput()
+
+    
+    hideMessage()
     
 }
 
