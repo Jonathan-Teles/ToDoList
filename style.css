@@ -139,6 +139,7 @@ ul{
     border: none;
     cursor: pointer;
     border-radius: 0 .3rem .3rem 0;
+    text-transform: uppercase;
 }
 .addNewTask .btn{
     width: 2rem;
@@ -157,3 +158,20 @@ ul li .btn{
     border-radius: .5rem;
 }
 
+.initialMessage{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 20em;
+    color: #2e2e2e;
+    background-color: #fff;
+    padding: 2em 2em;
+    border-radius: .5em;
+    margin: 0 auto;
+}
+
+.initialMessage .btn{
+
+    border-radius: .5em;
+    padding: .5em;
+}
