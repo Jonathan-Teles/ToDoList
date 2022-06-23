@@ -101,3 +101,10 @@ function appTask(){
         getNewTask()
     }
 }
+
+//function remove initialMessage
+
+function hideMessage(){
+    const message = document.querySelector('.initialMessage')
+    message.style.display = "none"
+}
