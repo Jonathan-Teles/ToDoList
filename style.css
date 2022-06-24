@@ -158,6 +158,9 @@ ul li .btn{
     border-radius: .5rem;
 }
 
+
+/*=============Initial message===========*/
+
 .initialMessage{
     display: flex;
     flex-direction: column;
@@ -175,3 +178,11 @@ ul li .btn{
     border-radius: .5em;
     padding: .5em;
 }
+
+.initialMessage span{
+    position: relative;
+    top: .5em;
+    font-weight: 600;
+    
+}
+
