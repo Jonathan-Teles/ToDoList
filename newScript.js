@@ -31,10 +31,10 @@ function getNewTask(){
     containertask.appendChild(checkTask)
 
     //Criando paragrafo para receber a nova tarefa
-    let taskParaphaph = document.createElement('p')
-    taskParaphaph.setAttribute ('contenteditable',"true")
-    taskParaphaph.innerText = takeNewTask       
-    containertask.appendChild(taskParaphaph)
+    let taskParagraph = document.createElement('p')
+    taskParagraph.setAttribute ('contenteditable',"true")
+    taskParagraph.innerText = takeNewTask       
+    containertask.appendChild(taskParagraph)
     //Adicionando tarefas à lista
     taskList.appendChild(liNewTask)
 
@@ -61,11 +61,11 @@ function getNewTask(){
         if(checkTask.checked == true){
             liNewTask.style.backgroundColor = "#027264"
             liNewTask.style.color = "#fff"
-            taskParaphaph.style.textDecoration = "line-through"
+            taskParagraph.style.textDecoration = "line-through"
         }else{
             liNewTask.style.backgroundColor = "#f0f8ff"
             liNewTask.style.color = "#000"
-            taskParaphaph.style.textDecoration = "none"
+            taskParagraph.style.textDecoration = "none"
         }
     })
 
